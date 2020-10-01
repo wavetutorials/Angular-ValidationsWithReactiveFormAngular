@@ -1,0 +1,12 @@
+
+/* input.ng-touched.ng-invalid{
+    border-color:red;
+} */
+
+.form-invalid{
+    border-color: red;
+}
+
+.form-valid{
+    border-color: green;
+}

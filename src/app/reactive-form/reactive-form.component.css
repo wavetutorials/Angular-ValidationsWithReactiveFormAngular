@@ -1,0 +1,7 @@
+.form-invalid{
+  border-color: red;
+}
+
+.form-valid{
+  border-color: green;
+}

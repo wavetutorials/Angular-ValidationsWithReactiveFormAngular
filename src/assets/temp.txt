@@ -1,0 +1,24 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  // templateUrl: './app.component.html',
+  template: `
+  <div class="toolbar"><img width="40" alt="Angular Logo" src="assets/angular.svg" />
+    <span>Welcome to {{title}}</span>
+  </div>
+
+  <div class="content">
+  <h3>{{session}}</h3>
+  <br/><br/><br/>
+
+  </div>`,
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'Wave Tutorials';
+  session = 'XXXXXX in Angular';
+
+  constructor() {
+  }
+}

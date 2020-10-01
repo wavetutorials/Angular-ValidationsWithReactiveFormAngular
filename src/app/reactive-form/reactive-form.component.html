@@ -1,0 +1,30 @@
+<p>Reactive Form</p>
+
+<form [formGroup]="regUserForm" (ngSubmit)="UserRegistration(regUserForm)">
+    <div>
+        {{validationMessage}}
+    </div>
+    <div>
+        <input type="text" placeHolder="First Name" formControlName="firstName"
+        [ngClass]="[(_firstName.touched && !_firstName.valid)?'form-invalid':'']"
+        [ngClass]="[(_firstName.valid)?'form-valid':'']"
+        >
+        <div *ngIf="_firstName.invalid && (_firstName.dirty || _firstName.touched)">
+            First Name is Required
+        </div>
+        <div *ngIf="regUserForm.controls['firstName'].invalid  && (regUserForm.controls['firstName'].dirty || regUserForm.controls['firstName'].touched)">
+            First Name is Required (Using form Name)
+        </div>
+    </div>
+    <div>
+        <input type="text" placeHolder="Last Name" formControlName="lastName">
+    </div>
+    <div>
+        <input type="text" placeHolder="Email Id" formControlName="emailID">
+    </div>
+    <div>
+        <button class="btn" type="submit" [disabled]="!regUserForm.valid">Register</button>
+        <button class="btn" type="reset">Reset</button>
+    </div>
+
+</form>

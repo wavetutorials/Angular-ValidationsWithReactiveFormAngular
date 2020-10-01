@@ -1,0 +1,81 @@
+/* You can add global styles to this file, and also import other style files */
+
+button {
+    cursor: pointer;
+    border-color: #dedede;
+}
+
+.btn {
+    border: 1px solid #29607E;
+    border-color: #eee;
+    margin-right: 5px;
+    width: 75px;
+    height: 25px;
+}
+
+.btn-red {
+    color: red;
+}
+
+.btn-blue {
+    color: blue;
+}
+
+.btn-green {
+    color: green;
+}
+
+.btn-bold {
+    font-weight: bold;
+}
+
+.btn-italic {
+    font-style: italic;
+}
+
+input {
+    border: 1px solid #29607E;
+}
+
+input[type=text] {
+    width: 200px;
+}
+
+input[type="text"]:disabled {
+    background-color: #849EAB;
+}
+
+.radio {
+    cursor: pointer;
+    color: #29607E;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 4px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4E99AE;
+    color: white;
+}
+
+form div {
+    margin-bottom: 5px;
+}
